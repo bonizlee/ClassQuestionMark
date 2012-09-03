@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Setting>
-	<InitRate>0</InitRate>
-	<BaseMark>70</BaseMark>
-	<FreeRate>85</FreeRate>
-	<Grade>-5;1;2;3;4;5</Grade>
-</Setting>
