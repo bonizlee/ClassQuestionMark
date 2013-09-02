@@ -40,11 +40,12 @@
             this.mnuAddStudent = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAddStudentBatch = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAddStudentOne = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSetting = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuQuery = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuQueryMark = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuExport = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuSetting = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuClearDB = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,20 +68,20 @@
             this.mnuSelectClass,
             this.mnuAsk});
             this.mnuQuiz.Name = "mnuQuiz";
-            this.mnuQuiz.Size = new System.Drawing.Size(92, 23);
+            this.mnuQuiz.Size = new System.Drawing.Size(103, 23);
             this.mnuQuiz.Text = "课堂提问(&Q)";
             // 
             // mnuSelectClass
             // 
             this.mnuSelectClass.Name = "mnuSelectClass";
-            this.mnuSelectClass.Size = new System.Drawing.Size(152, 24);
+            this.mnuSelectClass.Size = new System.Drawing.Size(160, 24);
             this.mnuSelectClass.Text = "选择班级(&S)";
             this.mnuSelectClass.Click += new System.EventHandler(this.mnuSelectClass_Click);
             // 
             // mnuAsk
             // 
             this.mnuAsk.Name = "mnuAsk";
-            this.mnuAsk.Size = new System.Drawing.Size(152, 24);
+            this.mnuAsk.Size = new System.Drawing.Size(160, 24);
             this.mnuAsk.Text = "提问登记(&Q)";
             this.mnuAsk.Click += new System.EventHandler(this.mnuAsk_Click);
             // 
@@ -91,29 +92,30 @@
             this.mnuChangeClass,
             this.mnuAddClass,
             this.mnuAddStudent,
-            this.mnuSetting});
+            this.mnuSetting,
+            this.mnuClearDB});
             this.mnuEdit.Name = "mnuEdit";
-            this.mnuEdit.Size = new System.Drawing.Size(94, 23);
+            this.mnuEdit.Size = new System.Drawing.Size(106, 23);
             this.mnuEdit.Text = "修改编辑(&M)";
             // 
             // mnuFree
             // 
             this.mnuFree.Name = "mnuFree";
-            this.mnuFree.Size = new System.Drawing.Size(158, 24);
+            this.mnuFree.Size = new System.Drawing.Size(171, 24);
             this.mnuFree.Text = "免提问登记(&F)";
             this.mnuFree.Click += new System.EventHandler(this.mnuFree_Click);
             // 
             // mnuChangeClass
             // 
             this.mnuChangeClass.Name = "mnuChangeClass";
-            this.mnuChangeClass.Size = new System.Drawing.Size(158, 24);
+            this.mnuChangeClass.Size = new System.Drawing.Size(171, 24);
             this.mnuChangeClass.Text = "调班操作(&A)";
             this.mnuChangeClass.Click += new System.EventHandler(this.mnuChangeClass_Click);
             // 
             // mnuAddClass
             // 
             this.mnuAddClass.Name = "mnuAddClass";
-            this.mnuAddClass.Size = new System.Drawing.Size(158, 24);
+            this.mnuAddClass.Size = new System.Drawing.Size(171, 24);
             this.mnuAddClass.Text = "添加班级(&C)";
             this.mnuAddClass.Click += new System.EventHandler(this.mnuAddClass_Click);
             // 
@@ -123,22 +125,29 @@
             this.mnuAddStudentBatch,
             this.mnuAddStudentOne});
             this.mnuAddStudent.Name = "mnuAddStudent";
-            this.mnuAddStudent.Size = new System.Drawing.Size(158, 24);
+            this.mnuAddStudent.Size = new System.Drawing.Size(171, 24);
             this.mnuAddStudent.Text = "添加学生(&S)";
             // 
             // mnuAddStudentBatch
             // 
             this.mnuAddStudentBatch.Name = "mnuAddStudentBatch";
-            this.mnuAddStudentBatch.Size = new System.Drawing.Size(152, 24);
+            this.mnuAddStudentBatch.Size = new System.Drawing.Size(138, 24);
             this.mnuAddStudentBatch.Text = "批量添加";
             this.mnuAddStudentBatch.Click += new System.EventHandler(this.mnuAddStudentBatch_Click);
             // 
             // mnuAddStudentOne
             // 
             this.mnuAddStudentOne.Name = "mnuAddStudentOne";
-            this.mnuAddStudentOne.Size = new System.Drawing.Size(152, 24);
+            this.mnuAddStudentOne.Size = new System.Drawing.Size(138, 24);
             this.mnuAddStudentOne.Text = "逐一添加";
             this.mnuAddStudentOne.Click += new System.EventHandler(this.mnuAddStudentOne_Click);
+            // 
+            // mnuSetting
+            // 
+            this.mnuSetting.Name = "mnuSetting";
+            this.mnuSetting.Size = new System.Drawing.Size(171, 24);
+            this.mnuSetting.Text = "设置参数(&P)";
+            this.mnuSetting.Click += new System.EventHandler(this.mnuSetting_Click);
             // 
             // mnuQuery
             // 
@@ -146,36 +155,36 @@
             this.mnuQueryMark,
             this.mnuExport});
             this.mnuQuery.Name = "mnuQuery";
-            this.mnuQuery.Size = new System.Drawing.Size(65, 23);
+            this.mnuQuery.Size = new System.Drawing.Size(72, 23);
             this.mnuQuery.Text = "查询(&U)";
             // 
             // mnuQueryMark
             // 
             this.mnuQueryMark.Name = "mnuQueryMark";
-            this.mnuQueryMark.Size = new System.Drawing.Size(152, 24);
+            this.mnuQueryMark.Size = new System.Drawing.Size(163, 24);
             this.mnuQueryMark.Text = "成绩查询(&M)";
             this.mnuQueryMark.Click += new System.EventHandler(this.mnuQueryMark_Click);
             // 
             // mnuExport
             // 
             this.mnuExport.Name = "mnuExport";
-            this.mnuExport.Size = new System.Drawing.Size(152, 24);
+            this.mnuExport.Size = new System.Drawing.Size(163, 24);
             this.mnuExport.Text = "导出成绩(&E)";
             this.mnuExport.Click += new System.EventHandler(this.mnuExport_Click);
             // 
             // mnuAbout
             // 
             this.mnuAbout.Name = "mnuAbout";
-            this.mnuAbout.Size = new System.Drawing.Size(64, 23);
+            this.mnuAbout.Size = new System.Drawing.Size(72, 23);
             this.mnuAbout.Text = "关于(&A)";
             this.mnuAbout.Click += new System.EventHandler(this.mnuAbout_Click);
             // 
-            // mnuSetting
+            // mnuClearDB
             // 
-            this.mnuSetting.Name = "mnuSetting";
-            this.mnuSetting.Size = new System.Drawing.Size(158, 24);
-            this.mnuSetting.Text = "设置参数(&P)";
-            this.mnuSetting.Click += new System.EventHandler(this.mnuSetting_Click);
+            this.mnuClearDB.Name = "mnuClearDB";
+            this.mnuClearDB.Size = new System.Drawing.Size(171, 24);
+            this.mnuClearDB.Text = "清空数据库(&L)";
+            this.mnuClearDB.Click += new System.EventHandler(this.mnuClearDB_Click);
             // 
             // MainParent
             // 
@@ -213,6 +222,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuAddStudentBatch;
         private System.Windows.Forms.ToolStripMenuItem mnuAddStudentOne;
         private System.Windows.Forms.ToolStripMenuItem mnuSetting;
+        private System.Windows.Forms.ToolStripMenuItem mnuClearDB;
     }
 }
 

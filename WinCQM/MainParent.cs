@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using ClassQuestionMark.BLL;
 
 namespace WinCQM
 {
@@ -111,6 +112,12 @@ namespace WinCQM
             SettingParm frmsettingparm = new SettingParm();
             frmsettingparm.MdiParent = this;
             frmsettingparm.Show();
+        }
+
+        private void mnuClearDB_Click(object sender, EventArgs e)
+        {
+            if(DialogResult.Yes==MessageBox.Show("真的要清空数据库吗，所以数据将会擦除。", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                Setting.ClearDataBase();
         }
 
        

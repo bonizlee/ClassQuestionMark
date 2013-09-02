@@ -100,7 +100,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(317, 23);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "版本：1.5版（单机版）";
+            this.labelVersion.Text = "版本：1.6版（单机版）";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCopyright

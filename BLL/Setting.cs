@@ -5,7 +5,7 @@ using System.Configuration;
 using System.Xml;
 using System.IO;
 using System.Linq;
-
+using ClassQuestionMark.Model;
 namespace ClassQuestionMark.BLL
 {
     public abstract class Setting
@@ -282,7 +282,7 @@ namespace ClassQuestionMark.BLL
         }
         #endregion
 
-        #region MyRegion
+        #region 最低等级分
         public static int MinGrade
         {
             get
@@ -291,5 +291,17 @@ namespace ClassQuestionMark.BLL
             }
         }	
         #endregion
+
+#region 清除数据库
+        public static void ClearDataBase()
+        {            
+            ClassQuestionMarkEntities cqme = new ClassQuestionMarkEntities();
+            cqme.ExecuteStoreCommand("Delete from " + cqme.MarkInfo.EntitySet.ElementType.Name);
+            cqme.ExecuteStoreCommand("Delete from " + cqme.StudentInfo.EntitySet.ElementType.Name);
+            cqme.ExecuteStoreCommand("Delete from " + cqme.LabClass.EntitySet.ElementType.Name);
+            cqme.ExecuteStoreCommand("Delete from " + cqme.TheoryClass.EntitySet.ElementType.Name);
+            cqme.SaveChanges();
+        }
+#endregion
     }
 }
